@@ -824,8 +824,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 3rem;
   line-height: 1;
 }
-<<<<<<< HEAD
-=======
 
 .text-6xl {
   font-size: 3.75rem;
@@ -918,5 +916,3 @@ Ensure the default browser behavior of the `hidden` attribute.
   content: var(--tw-content);
   border-radius: 9999px;
 }
-
->>>>>>> 6612d07d5945f8013fa1f90bc36115402b15a71f
