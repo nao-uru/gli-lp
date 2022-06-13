@@ -1,7 +1,57 @@
+@use '../src/parts/gold';
+@use '../src/parts/round';
+
+$white:#ffffff;
+$nevy:#1E2782;
+$skyBlue:#E6F0FA;
+
 body {
   background: rgb(201, 201, 217);
 }
 
-h2 {
-  color: blueviolet;
+.main-container {
+  width: 750px;
+}
+
+mark {
+  background:linear-gradient(transparent 60%, #F0DB3C 0%);
+}
+
+.border-gold {
+  border-radius: 10px;
+  position:relative;
+  z-index:1;
+  background:linear-gradient(to right, #C9A53A, #815002);
+  text-align:center;
+}
+
+.border-gold::before {
+  border-radius: 10px;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:-1;
+  box-sizing:border-box;
+  padding:3px;
+  width:100%;
+  height:100%;
+  background: $nevy;
+  background-clip:content-box;
+  content:"";
+}
+
+.h-circle::before {
+  background: linear-gradient(180deg, #0667BB 0%, #1E2782 100%);
+  padding: 8px;
+  background-clip:content-box;
+}
+
+.h-circle-white::before {
+  background: $white;
+  padding: 8px;
+  background-clip:content-box;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
