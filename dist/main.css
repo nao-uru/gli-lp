@@ -1,9 +1,187 @@
+@charset "UTF-8";
+.h-title-first, .h-title-big, .h-title-last {
+  position: relative;
+  text-shadow: 2px 2px 6px #FFFFFF;
+}
+
+.h-title::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: none;
+  background: linear-gradient(180deg, #A16D07 48.44%, #D3AD35 51.04%, #A16D07 67.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.h-title-first::before {
+  content: "開業費用";
+}
+
+.h-title-big::before {
+  content: "0";
+}
+
+.h-title-last::before {
+  content: "円";
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #D6B237 48.44%, #855200 65.62%, #BA8D1B 82.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-text-light {
+  background: linear-gradient(180deg, #FEDF93 15.1%, #FFFFFF 50.52%, #FEDF93 89.06%, #FEDF93 89.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.big-text {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.big-text::before {
+  position: absolute;
+  content: "つの秘密";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+  background: linear-gradient(180deg, #FFFFFF 50.52%, #FFE7AB 67.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.big-text-first {
+  font-size: 240px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.big-text-first::before {
+  position: absolute;
+  content: "3";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: none;
+  background: linear-gradient(180deg, #FFFFFF 50.52%, #FFE7AB 67.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-outer {
+  display: block;
+  margin: 50px auto;
+  max-width: 750px;
+  padding: 20px 0;
+  position: relative;
+  background: #fff;
+}
+
+.inner {
+  position: relative;
+  padding: 0px 40px;
+  margin: 0 -20px;
+  background: #fff;
+}
+
+.bg-outer:before, .bg-outer:after,
+.inner:before, .inner:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: 20px solid #ffffff;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.bg-outer:before {
+  top: -40px;
+  left: -60px;
+  clip: rect(40px, auto, auto, 40px);
+}
+
+.bg-outer:after {
+  top: -40px;
+  right: -59px;
+  clip: rect(40px, 40px, auto, auto);
+}
+
+.inner:before {
+  bottom: -60px;
+  left: -40px;
+  clip: rect(auto, auto, 40px, 40px);
+}
+
+.inner:after {
+  bottom: -60px;
+  right: -40px;
+  clip: rect(auto, 40px, 40px, auto);
+}
+
 body {
   background: rgb(201, 201, 217);
 }
 
-h2 {
-  color: blueviolet;
+.main-container {
+  width: 750px;
+}
+
+mark {
+  background: linear-gradient(transparent 60%, #F0DB3C 0%);
+}
+
+.border-gold {
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to right, #C9A53A, #815002);
+  text-align: center;
+}
+
+.border-gold::before {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-sizing: border-box;
+  padding: 3px;
+  width: 100%;
+  height: 100%;
+  background: #1E2782;
+  background-clip: content-box;
+  content: "";
+}
+
+.h-circle::before {
+  background: linear-gradient(180deg, #0667BB 0%, #1E2782 100%);
+  padding: 8px;
+  background-clip: content-box;
+}
+
+.h-circle-white::before {
+  background: #ffffff;
+  padding: 8px;
+  background-clip: content-box;
+}
+
+.text-shadow {
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 /*# sourceMappingURL=main.css.map */
