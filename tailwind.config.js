@@ -17,11 +17,11 @@ module.exports = {
   theme: {
     colors: {
       white: '#ffffff',
-      nevy: '#1E2782',
+      nevy: '#1e2882',
       skyBlue: '#E6F0FA',
       gray:'#6E6E6E',
       black:'#000000',
-      teal:'#45B4C8',
+      // teal:'#45B4C8',
       yellow:'#FEFE8B',
     }
   }

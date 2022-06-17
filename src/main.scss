@@ -6,11 +6,26 @@ $nevy:#1E2782;
 $skyBlue:#E6F0FA;
 
 body {
+  width: 100%;
+  max-width: 1920px;
   background: rgb(201, 201, 217);
+  font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+header {
+  background-image: url('../assets/main-top.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .main-container {
-  width: 750px;
+  width: 1000px;
+}
+
+.main-section1 {
+  background-image: url('../assets/1back.png');
+  background-size: cover;
 }
 
 mark {
@@ -55,3 +70,20 @@ mark {
 .text-shadow {
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.25);
 }
+
+.back-blue {
+ background-image: url('../assets/back-blue.png'); 
+}
+.bg-outer {
+  background-image: url("../assets/back-white.png");
+}
+.bg-green {
+  background-image: url("../assets/back2.png");
+}
+.bg-num1 {
+  background-image: url("../assets/back01.png");
+}
+
+// .font800 {
+//   font-weight: 800;
+// }
