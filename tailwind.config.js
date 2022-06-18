@@ -21,8 +21,14 @@ module.exports = {
       skyBlue: '#E6F0FA',
       gray:'#6E6E6E',
       black:'#000000',
-      // teal:'#45B4C8',
       yellow:'#FEFE8B',
+    },
+
+    screens: {
+      'sm': {'max': '640px'},
+      'md': {'max': '768px'},
+      'lg': {'max': '1024px'},
+      'xl': {'max': '1500px'},
     }
   }
 }
