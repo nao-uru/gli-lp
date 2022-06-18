@@ -1,6 +1,6 @@
-.h-title-first, .h-title-big, .h-title-last{
+.h-title-first, .h-title-big, .h-title-last, .shadow-white {
   position: relative;
-  text-shadow: 2px 2px 6px #FFFFFF;
+  text-shadow: -8px -8px 8px rgba(255, 255, 255, 0.8), 8px 8px 8px rgba(255, 255, 255, 0.8);
 }
 
 .h-title::before {
@@ -17,7 +17,7 @@
 }
 
 .h-title-first,.h-title-last {
-  font-size: 81px;
+  font-size: 80px;
   letter-spacing: -4px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .gold-text {
-  background: linear-gradient(180deg, #D6B237 48.44%, #855200 65.62%, #BA8D1B 82.81%);
+  background: linear-gradient(180deg, #835103 17.71%, #DBB63B 56.25%, #A97E02 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,6 +55,14 @@
   font-size: 132px;
   text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.40);
 }
+.big-text-first {
+  font-size: 353px;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.40);
+}
+.big-text-last {
+  font-size: 176px;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.40);
+}
 
 .big-text-middle::before {
 position: absolute;
@@ -71,10 +79,6 @@ background: linear-gradient(180deg, #FFFFFF 50.52%, #FFE7AB 67.71%);
 background-clip: text;
 }
 
-.big-text-first {
-  font-size: 353px;
-  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.40);
-}
 
 .big-text-first::before {
 position: absolute;
@@ -91,10 +95,6 @@ background: linear-gradient(180deg, #FFFFFF 50.52%, #FFE7AB 67.71%);
 background-clip: text;
 }
 
-.big-text-last {
-  font-size: 176px;
-  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.40);
-}
 
 .big-text-last::before {
   position: absolute;
@@ -109,4 +109,28 @@ background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+
+@media screen and (max-width:1024px) {
+
+  .h-title-first,.h-title-last {
+    font-size: 40px;
+    letter-spacing: -4px;
+  }
+  
+  .h-title-big {
+    font-size: 64px;
+  }
+
+  .big-text-middle {
+    font-size: 80px;
+  }
+  .big-text-first {
+    font-size: 180px;
+  }
+  .big-text-last {
+    font-size: 64px;
+  }
+  
 }
