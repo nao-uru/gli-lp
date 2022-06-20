@@ -41,7 +41,7 @@ mark {
 .border-gold {
   border-radius: 10px;
   position:relative;
-  z-index:1;
+  z-index: 1;
   background: linear-gradient(262.68deg, #B97419 0%, #FDF1CB 41.04%, #EACA7C 58.33%, #B97419 100%);
   text-align:center;
 }
@@ -158,7 +158,6 @@ mark {
 
   header {
     background-image: url('../assets/main-top-sp.png');
-    // background-image: image-set(url(../assets/main-top-sp.png) 1x, url() 2x);
   }
 
   .main-container {
