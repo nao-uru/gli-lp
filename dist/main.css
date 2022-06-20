@@ -319,9 +319,7 @@ mark {
   }
 
   .bg-num1, .bg-num2, .bg-num3 {
-    background-image: none;
-    background-color: #ffffff;
-    border-radius: 10px;
+    background-position: center;
   }
 }
 @media screen and (max-width: 740px) {
@@ -353,6 +351,12 @@ mark {
   .border-brown {
     border: 1px double #9B6C2C;
     opacity: 0.9;
+  }
+
+  .bg-num1, .bg-num2, .bg-num3 {
+    background-image: none;
+    background-color: #ffffff;
+    border-radius: 10px;
   }
 }
 

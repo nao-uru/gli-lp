@@ -528,12 +528,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: 5rem;
 }
 
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
 .z-20 {
   z-index: 20;
 }
 
 .z-10 {
   z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.-z-20 {
+  z-index: -20;
 }
 
 .m-auto {
@@ -763,9 +779,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 33.333333%;
 }
 
-.rotate-90 {
-  --tw-rotate: 90deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.w-11\/12 {
+  width: 91.666667%;
 }
 
 .flex-row-reverse {
@@ -1119,6 +1134,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.5;
 }
 
+.leading-tight {
+  line-height: 1.25;
+}
+
 .tracking-tight {
   letter-spacing: -0.025em;
 }
@@ -1298,6 +1317,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 25%;
   }
 
+  .md\:w-6 {
+    width: 1.5rem;
+  }
+
   .md\:w-24 {
     width: 6rem;
   }
@@ -1328,14 +1351,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-2\/12 {
     width: 16.666667%;
-  }
-
-  .md\:w-4 {
-    width: 1rem;
-  }
-
-  .md\:w-6 {
-    width: 1.5rem;
   }
 
   .md\:rotate-90 {
@@ -1369,12 +1384,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:p-2 {
-    padding: 0.5rem;
-  }
-
   .md\:p-3 {
     padding: 0.75rem;
+  }
+
+  .md\:p-2 {
+    padding: 0.5rem;
   }
 
   .md\:py-4 {
@@ -1478,6 +1493,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.75rem;
   }
 
+  .md\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1488,31 +1513,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 2.25rem;
   }
 
-  .md\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
-
   .md\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .md\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
   }
 
   .md\:tracking-tight {
     letter-spacing: -0.025em;
   }
 
-  .md\:tracking-normal {
-    letter-spacing: 0em;
-  }
-
   .md\:tracking-tighter {
     letter-spacing: -0.05em;
+  }
+
+  .md\:tracking-normal {
+    letter-spacing: 0em;
   }
 
   .md\:shadow-lg {
@@ -1537,6 +1552,54 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:left-20 {
     left: 5rem;
+  }
+
+  .lg\:left-40 {
+    left: 10rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
+  .lg\:left-64 {
+    left: 16rem;
+  }
+
+  .lg\:left-80 {
+    left: 20rem;
+  }
+
+  .lg\:top-10 {
+    top: 2.5rem;
+  }
+
+  .lg\:left-0 {
+    left: 0px;
+  }
+
+  .lg\:left-5 {
+    left: 1.25rem;
+  }
+
+  .lg\:left-52 {
+    left: 13rem;
+  }
+
+  .lg\:left-32 {
+    left: 8rem;
+  }
+
+  .lg\:left-48 {
+    left: 12rem;
+  }
+
+  .lg\:left-4 {
+    left: 1rem;
+  }
+
+  .lg\:m-auto {
+    margin: auto;
   }
 
   .lg\:mt-16 {
@@ -1577,6 +1640,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:mr-2 {
     margin-right: 0.5rem;
+  }
+
+  .lg\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .lg\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
   }
 
   .lg\:block {
@@ -1643,6 +1722,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 16.666667%;
   }
 
+  .lg\:w-4 {
+    width: 1rem;
+  }
+
+  .lg\:w-1\/5 {
+    width: 20%;
+  }
+
   .lg\:flex-wrap {
     flex-wrap: wrap;
   }
@@ -1694,6 +1781,26 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pb-12 {
     padding-bottom: 3rem;
+  }
+
+  .lg\:pt-40 {
+    padding-top: 10rem;
+  }
+
+  .lg\:pt-32 {
+    padding-top: 8rem;
+  }
+
+  .lg\:pt-4 {
+    padding-top: 1rem;
+  }
+
+  .lg\:pt-52 {
+    padding-top: 13rem;
+  }
+
+  .lg\:pt-48 {
+    padding-top: 12rem;
   }
 
   .lg\:text-center {
@@ -1752,6 +1859,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:leading-relaxed {
     line-height: 1.625;
+  }
+
+  .lg\:leading-tight {
+    line-height: 1.25;
   }
 }
 
