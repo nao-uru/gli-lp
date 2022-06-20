@@ -1,5 +1,4 @@
 @use '../src/parts/gold';
-@use '../src/sp';
 @use '../src/parts/animation';
 
 
@@ -10,7 +9,6 @@ $skyBlue:#E6F0FA;
 body, html, .wrap {
   width: 100%;
   max-width: 1920px;
-  background: rgb(234, 234, 240);
   font-family:"Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
   // font-family: 'Noto Sans JP', sans-serif;
 }
@@ -33,6 +31,10 @@ header {
 
 mark {
   background:linear-gradient(transparent 60%, #F0DB3C 0%);
+}
+
+.bottom-fixed {
+  background: linear-gradient(180deg, #0667B8 0%, #1A2982 100%);
 }
 
 .border-gold {
@@ -58,7 +60,7 @@ mark {
 }
 
 .gold-border2::before {
-  background-color: #1A2982;
+  background-color: $nevy;
   padding: 5px;
 }
 
@@ -147,13 +149,18 @@ mark {
 
   .bg-num1,.bg-num2,.bg-num3 {
     background-image: none;
-    background-color: white;
+    background-color: $white;
     border-radius: 10px;
   }
   
 }
 
 @media screen and (max-width:740px) {
+
+  header {
+    background-image: url('../assets/main-top-sp.png');
+    background-image: image-set(url(../assets/main-top-sp.png) 1x, url() 2x);
+  }
 
   .main-container {
     // background-color: rgb(178, 203, 178);
@@ -170,7 +177,10 @@ mark {
   }
 
   .bg-outer {
-    background-color: white;
+    background-color: $white;
+  }
+  .bg-gold {
+    background: radial-gradient(50.28% 50.28% at 49.88% 49.72%, #FFFEE5 21.55%, #F4C66D 100%)
   }
 
   
