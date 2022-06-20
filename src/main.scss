@@ -1,6 +1,6 @@
 @use '../src/parts/gold';
 @use '../src/parts/animation';
-
+@use '../src/parts/round';
 
 $white:#ffffff;
 $nevy:#1E2782;
@@ -155,7 +155,7 @@ mark {
 }
 
 @media screen and (max-width:740px) {
-
+ 
   header {
     background-image: url('../assets/main-top-sp.png');
   }
@@ -166,11 +166,11 @@ mark {
   }
 
   .h-title-first, .h-title-last {
-    font-size: 32px;
+    font-size: 40px;
   }
 
   .h-title-big {
-    font-size: 80px;
+    font-size: 100px;
   }
 
   .bg-outer {
