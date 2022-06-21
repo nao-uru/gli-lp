@@ -23,7 +23,7 @@
 <body>
 
   <div class="wrap w-full">
-    <header class="w-full">
+    <header class="w-full md:mt-20">
       <a href="" class="hover:opacity-80 md:hidden">
         <div class="bg-nevy px-6 py-6 font-bold absolute top-0 right-0">
           <p class="text-lg text-center text-white">お申し込み・お見積もり（無料）はこちら</p>
@@ -36,18 +36,26 @@
         </div>
       </a>
 
-      <div class="flex flex-col justify-center items-center w-full m-auto pt-20 md:pt-24">
-        <div class="h-logo w-96 md:w-32 h-20 bg-white text-4xl md:text-xl">LOGO</div>
-        <div class="flex space-x-7 md:space-x-4 mt-12 md:mt-8">
-          <div class="h-circle flex justify-center items-center border-gold rounded-full w-48 md:w-36 h-48 md:h-36 before:rounded-full">
+      <div class="flex flex-col justify-center items-center w-full m-auto pt-20 md:pt-24 ">
+        <div class="h-logo w-96 md:w-full md:absolute top-0 h-20 bg-white text-4xl md:text-xl z-20">LOGO</div>
+        <div class="flex space-x-7 md:space-x-4 mt-12 md:mt-0">
+          <div class="h-circle flex justify-center items-center border-gold rounded-full w-48 h-48 before:rounded-full md:hidden">
             <p class="text-white font-bold text-4xl md:text-2xl">教室なし</p>
           </div>
 
-          <div class="h-circle flex justify-center items-center border-gold rounded-full bg-nevy w-48 md:w-36 h-48 md:h-36 before:rounded-full">
-            <p class="text-white font-bold text-4xl md:text-2xl leading-none mt-3">スタッフ<br /><span class="text-6xl md:text-4xl font-din">0</span></p>
+          <div class="hidden w-36 h-16 h-circle justify-center items-center border-gold rounded-md bg-nevy before:rounded-md md:flex">
+            <p class="text-white font-bold text-2xl">教室なし</p>
           </div>
-        </div>
-        <div class="mt-4 mb-8 md:mt-14">
+
+          <div class="h-circle flex justify-center items-center border-gold rounded-full bg-nevy w-48 h-48 before:rounded-full md:hidden">
+            <p class="text-white font-bold text-4xl md:text-2xl leading-none mt-3">スタッフ<br /><span class="text-6xl font-din">0</span></p>
+          </div>
+
+          <div class="hidden w-36 h-16 h-circle justify-center items-center border-gold rounded-md bg-nevy before:rounded-md md:flex">
+            <p class="text-white font-bold text-2xl">スタッフ<span class="text-4xl font-din">0</span></p>
+          </div>
+        </div>  
+        <div class="mt-4 mb-8 md:mt-0 md:pb-40">
           <div class="flex items-baseline justify-center">
             <p class="font-bold text-5xl lg:text-3xl md:text-xl leading-9 shadow-white">つまり</p>
             <p class="h-title h-title-first font-extrabold">開業費用</p>
@@ -65,7 +73,8 @@
       <div class="bg-sharp pt-16 pb-20 md:py-4">
         <div class="main-container">
           <div class="flex md:flex-col items-end justify-center mt-16 md:mt-4 m-auto scr-target">
-            <img src="./assets/rank.png"   class="w-2/3 lg:w-1/2 md:w-4/5 m-auto" alt="">
+            <img src="./assets/rank.png"   class="w-2/3 lg:w-1/2 md:w-4/5 m-auto md:hidden" alt="">
+            <p class="hidden md:block text-2xl text-nevy font-bold text-center m-auto">親が子どもに習わせたい<br />習い事ランキング</p>
             <img src="./assets/no1.png" srcset="./assets/no1.png 1x, ./assets/no1@2x.png 2x" class="w-2/3 lg:w-1/2 md:w-4/5 m-auto md:mt-2" alt="">
           </div>
           <div class="bg-white px-10 md:px-2 py-16 md:py-4 mt-24 lg:mt-16 md:mt-6 shadow-2xl md:shadow-lg scr-target">
@@ -89,24 +98,25 @@
             <img class="my-8 md:my-6 md:w-1/4" src="./assets/arrow.png" alt="矢印アイコン">
           </div>
   
-          <section class="flex items-center justify-around mt-5 scr-target">
-            <div class="rounded-3xl w-fit px-6 md:px-4 py-3 bg-gray">
-              <p class="text-2xl lg:text-lg md:text-xs md:tracking-tighter   text-white font-bold">既存のスクール</p>
+          <section class="flex md:flex-col items-center justify-around mt-5 scr-target">
+            <div class="rounded-3xl w-fit px-6  py-3 bg-gray">
+              <p class="text-2xl lg:text-lg  text-white font-bold">既存のスクール</p>
             </div>
-            <p class="text-7xl lg:text-5xl md:text-lg font-bold">+</p>
+            <p class="text-7xl lg:text-5xl font-bold">+</p>
             <div class="border-gold gold-border2 w-fit">
-              <p class="z-10 text-center text-white font-bold text-4xl lg:text-2xl md:text-sm p-6 md:p-3">GLIオンライン<br />英会話</p>
+              <p class="md:hidden z-10 text-center text-white font-bold text-4xl lg:text-2xl md:text-sm p-6 md:p-3">GLIオンライン<br />英会話</p>
+              <p class="hidden md:block z-10 text-center text-white font-bold text-3xl p-6">GLIオンライン英会話</p>
             </div>
-            <p class="text-7xl lg:text-5xl md:text-lg font-bold">=</p>
+            <p class="text-7xl lg:text-5xl md:rotate-90 font-bold">=</p>
   
             <div class="">
-              <div class="flex items-center">
-                <p class="gold-text text-7xl lg:text-5xl md:text-2xl font-black">生徒増</p>
-                <img class="md:w-6" src="./assets/arrow-up.png" alt="">
+              <div class="flex items-center justify-center">
+                <p class="gold-text text-7xl lg:text-5xl md:text-6xl font-black md:font-bold">生徒増</p>
+                <img src="./assets/arrow-up.png" alt="">
               </div>
-              <div class="flex items-center mt-3 md:mt-0">
-                <p class="gold-text text-7xl lg:text-5xl md:text-2xl font-black">収益増</p>
-                <img class="md:w-6" src="./assets/arrow-up.png" alt="">
+              <div class="flex items-center justify-center mt-3 md:mt-2">
+                <p class="gold-text text-7xl lg:text-5xl md:text-6xl font-black md:font-bold">収益増</p>
+                <img src="./assets/arrow-up.png" alt="">
               </div>
             </div>
           </section>
@@ -116,21 +126,25 @@
           </div>
   
           <section class="scr-target">
-            <img class="mt-36 md:mt-12 lg:w-4/5 m-auto" src="./assets/copy.png" srcset="./assets/copy.png 1x, ./assets/copy@2x.png 2x" alt="">
-            <h1 class="text-center font-black text-7xl lg:text-5xl md:text-4xl tracking-tight md:tracking-normal mt-8 border-b-2 border-gray pb-4">デメリットは<br class="hidden md:block" />ございません!</h1>
+            <img class="hidden lg:w-4/5 m-auto" src="./assets/copy.png" srcset="./assets/copy.png 1x, ./assets/copy@2x.png 2x" alt="">
+            <img class="hidden w-4/5 md:block m-auto mt-6" src="./assets/copy-sp.png" alt="">
+            <h1 class="md:hidden text-center font-black text-7xl lg:text-5xl  tracking-tight md:tracking-normal mt-8 border-b-2 border-gray pb-4">デメリットはございません!</h1>
+            <a class="hidden md:block text-5xl text-center font-black mt-6 border-b-2 border-gray pb-3 w-fit m-auto">デメリットは</a>
+            <a class="hidden md:block text-5xl text-center font-black mt-3 border-b-2 border-gray pb-3 w-fit m-auto">ございません!</a>
           </section>
   
           <section class="mt-40 md:mt-10 scr-target">
-            <div class="flex justify-center items-center md:items-start">
-              <img class="w-64 md:w-24 h-full" src="./assets/now-only.png" srcset="./assets/now-only.png 1x, ./assets/now-only@2x.png 2x" alt="">
+            <p class="hidden md:block text-4xl font-black w-fit m-auto text-red1">今だけ！</p>
+            <div class="flex justify-center items-center md:items-start md:mt-2">
+              <img class="md:hidden w-64 md:w-24 h-full" src="./assets/now-only.png" srcset="./assets/now-only.png 1x, ./assets/now-only@2x.png 2x" alt="">
               <div>
-                <p class="text-4xl lg:text-2xl md:text-lg text-black tracking-widest md:tracking-tighter leading-loose font-bold"><span class="text-5xl lg:text-3xl md:text-lg font-bold text-nevy border-b-2 border-gray tracking-wider md:tracking-tighter">4技能英語力+国内外受験</span>に強い<br /><span class="text-5xl lg:text-3xl md:text-lg font-bold text-nevy border-b-2 border-gray tracking-wider">GLIオンラインの代理店</span>を</p>
-                <h1 class="gold-text text-9xl lg:text-7xl md:text-5xl  font-bold tracking-widest">限定募集!!</h1>
+                <p class="text-4xl lg:text-2xl md:text-lg text-black tracking-widest md:tracking-tighter leading-loose font-bold"><span class="text-5xl lg:text-3xl md:text-2xl font-bold text-nevy border-b-2 border-gray tracking-wider md:tracking-tighter">4技能英語力+国内外受験</span>に強い<br /><span class="text-5xl lg:text-3xl  md:text-2xl font-bold text-nevy border-b-2 border-gray tracking-wider">GLIオンラインの代理店</span>を</p>
+                <h1 class="gold-text text-9xl lg:text-7xl md:text-6xl  font-bold tracking-widest">限定募集!!</h1>
               </div>
             </div>
   
             <div class="back-blue flex justify-center mt-11 py-8">
-              <p class="gold-text-light text-center leading-relaxed md:tracking-tighter font-bold text-5xl lg:text-3xl md:text-lg">認定されれば、あなたも<br />ハイブランド英会話教室のオーナーに！</p>
+              <p class="gold-text-light text-center leading-relaxed md:tracking-tighter font-bold text-5xl lg:text-3xl md:text-2xl">認定されれば、あなたも<br />ハイブランド英会話教室の<br class="hidden md:block" />オーナーに！</p>
             </div>
             <p class="leading-relaxed tracking-tighter text-lg md:text-sm w-5/6 m-auto mt-4">代理店制度新規加盟には審査を受けて頂く必要がございます。説明会や面談等で加盟に向けてサポートさせて頂きます。</p>
           </section>
@@ -149,7 +163,8 @@
           </section>
 
           <section class="scr-target">
-            <div class="flex md:flex-col items-center justify-around mt-28 lg:mt-16 md:mt-4">
+            <img class="hidden md:block mt-3" src="./assets/skills2.png" alt="">
+            <div class="md:hidden flex md:flex-col items-center justify-around mt-28 lg:mt-16 md:mt-4">
               <div class="border-gold h-circle-white flex justify-center items-center rounded-full w-44 h-44 md:w-32 md:h-32 lg:w-36 lg:h-36 before:rounded-full">
                 <p class="text-nevy font-bold text-2xl lg:text-xl md:text-base">本格4技能<br />英語力</p>
               </div>
@@ -228,31 +243,28 @@
             </p>
           </section>
 
-          <section class="bg-gold md:shadow-lg md:py-1 mt-20 mb-24 md:my-6 relative scr-target">
+          <section class="bg-gold md:py-6 mt-20 mb-24 md:my-0 relative scr-target">
+            <img class="hidden md:block" src="./assets/students.png" alt="">
             <img class="w-full relative md:hidden" src="./assets/back/back-gold.png" alt="">
-            <div class="border-brown md:m-1">
-            <div class="border-brown md:m-1 md:p-2">
-              <div class="w-4/5 lg:w-11/12 absolute md:static left-0 right-0 top-10  bottom-0 m-auto">
-                <p class="text-6xl lg:text-3xl md:text-3xl font-bold text-center">GLIの実績</p>
+              <div class="md:hidden w-4/5 lg:w-11/12 absolute md:static left-0 right-0 top-10  bottom-0 md:mt-12 m-auto">
+                <p class="text-6xl lg:text-3xl md:text-4xl font-bold text-center">GLIの実績</p>
                 <div class="flex md:flex-col justify-center items-start w-full mt-6 lg:mt-3">
-                  <div class="w-1/2 lg:w-1/3 md:w-full">
-                    <img class="lg:w-32 md:w-4/5 m-auto" src="./assets/eiken.png" alt="">
-                    <p class="text-base md:text-base mt-4 lg:mt-2 md:mt-1 md:w-full md:m-auto">Aさん（小学校3年生）<br />
+                  <div class="w-1/2 lg:w-1/3 md:w-full md:mt-3">
+                    <img class="lg:w-32 md:w-full m-auto" src="./assets/eiken.png" alt="">
+                    <p class="text-base mt-4 lg:mt-2 md:mt-6 md:w-fit md:m-auto">Aさん（小学校3年生）<br />
                       Fさん（小学6年生）<br />
                       Nくん（小学5年生）<br />
                       </p>
                   </div>
-                  <div class="w-full lg:w-2/3 ml-20 md:ml-0 lg:ml-0 md:w-full md:mt-8">
-                    <img class="m-auto lg:w-40 md:w-4/5" src="./assets/eiken2.png" alt="">
-                    <p class="text-base lg:text-sm md:text-base  mt-4 lg:mt-2 md:mt-1 md:w-full md:m-auto tracking-tighter">Nさん（小学6年生）、Iさん（小学2年生）、Aさん（小学3年生）<br />
+                  <div class="w-full lg:w-2/3 ml-20 md:ml-0 lg:ml-0 md:w-full md:mt-8 md:pb-12">
+                    <img class="m-auto lg:w-40 md:w-full" src="./assets/eiken2.png" alt="">
+                    <p class="text-base lg:text-sm md:text-base  mt-4 lg:mt-2 md:mt-10 md:w-4/5 md:m-auto">Nさん（小学6年生）、Iさん（小学2年生）、Aさん（小学3年生）<br />
                       Rさん（小学2年生）、Sさん（小学3年生）、Eさん（小学3年生）<br class="md:hidden" />
                       Jくん（小学5年生）                    
                       </p>
                   </div>
                 </div>
               </div>        
-            </div>
-            </div>
           </section>
         </div>
       </div>
@@ -274,6 +286,7 @@
           </section>
 
           <section>
+            <img src="./assets/01-sp.png" alt="">
             <div class="bg-num1 md:shadow-lg relative w-full mt-12 pt-20 pb-10 lg:pt-14 md:py-6 scr-target">
               <div class="relative lg:w-4/5 md:w-11/12 m-auto">
                 <div class="w-fit lg:flex md:flex items-center justify-center absolute md:static left-72 lg:left-40 z-20">
@@ -421,11 +434,11 @@
         <div class="main-container">
 
           <section class="scr-target">
-            <img src="./assets/notonly-lesson@2x.png" alt="">
+            <img src="./assets/notonly-lesson@2x.png" alt="レッスンだけじゃない！">
             <h1 class="gold-text-dark text-8xl lg:text-6xl md:text-4xl text-center font-extrabold mt-14 md:mt-8">GLIは<br />進学までサポート</h1>
 
             <div class="flex md:flex-col-reverse items-center space-x-2 mt-20 lg:mt-10 md:mt-10">
-              <img class="w-2/5 lg:w-2/5 md:w-2/3 md:mt-2 mr-3" src="./assets/college.png" alt="">
+              <img class="md:hidden w-2/5 lg:w-2/5 md:w-2/3 md:mt-2 mr-3" src="./assets/college.png" alt="">
               <div>
                 <p class="font-bold text-3xl lg:text-xl md:text-lg text-nevy">専門エージェントによる国内外の</p>
                 <p class="mt-5 lg:mt-3 md:mt-0 font-extrabold text-6xl lg:text-4xl md:text-3xl text-nevy">進学コーディネート</p>
@@ -437,17 +450,20 @@
                   <li class="mt-1">4）高校大学受験英語</li>
                   <li class="mt-1">5）UWCやトビタテ留学Japanの対策</li>
                 </ul>
-                <p class="text-lg lg:text-base md:text-base">
-                  またGLIはイギリス、アメリカ、カナダ、オーストラリアなど中学からの留学もサポートしています。長年学習塾を経営している法人母体の為、国内、海外共に進路指導が出来る事が強みです。ハイレベルなグローバルスキルを身に付け、それらを利用して受験を叶える新しいスタイルの英会話スクールです。
-                </p>
+                <div class="md:flex md:flex-row-reverse items-center md:mt-3">
+                  <img class="hidden md:block w-1/2 md:mt-2" src="./assets/college.png" alt="">
+                  <p class="text-sm">
+                    またGLIはイギリス、アメリカ、カナダ、オーストラリアなど中学からの留学もサポートしています。長年学習塾を経営している法人母体の為、国内、海外共に進路指導が出来る事が強みです。ハイレベルなグローバルスキルを身に付け、それらを利用して受験を叶える新しいスタイルの英会話スクールです。
+                  </p>
+                </div>
               </div>
             </div>
 
             <div class="mt-24 lg:mt-12 md:mt-10">
               <div class="flex items-center justify-start">
-                <img class="mr-6 lg:mr-2 md:mr-1 lg:w-1/6 md:w-1/4"  src="./assets/more.png" alt="">
+                <img class="mr-6 lg:mr-2 md:mr-1 lg:w-1/6 md:w-1/6"  src="./assets/more.png" alt="さらに">
                 <div>
-                  <p class="font-bold text-3xl lg:text-xl  md:text-lg text-nevy">お子様の学びが「社会貢献」にも繋がります！</p>
+                  <p class="font-bold text-3xl lg:text-xl md:text-sm md:tracking-tight text-nevy">お子様の学びが「社会貢献」にも繋がります！</p>
                   <p class="mt-5 lg:mt-3 md:mt-1 font-extrabold text-6xl lg:text-4xl md:text-3xl text-nevy">社会貢献</p>
                 </div>
               </div>
@@ -474,15 +490,15 @@
                 レッスンや顧客管理は全てGLIが行うので、やって頂く事は生徒の紹介のみ。また、02代理店契約ではご自身に生徒を管理して頂くので、ご自身の英会話スクールを持つのと同様のサービスを提供する事ができます。
               </p>
 
-              <table class="table-fee w-full mt-3 bg-white">
+              <table class="md:hidden table-fee w-full mt-3 bg-white">
                 <tbody class="border-bottom w-full">
                   <th class="w-1/12 md:w-auto text-5xl lg:text-3xl md:text-lg text-white font-bold bg-nevy">01</th>
-                  <td class="w-3/12 md:w-2/12 font-bold text-2xl lg:text-xl md:text-sm bg-skyBlue text-center">受講生の紹介のみ</td>
+                  <td class="w-3/12 md:w-2/12 font-bold text-2xl lg:text-xl md:text-sm bg-purple text-center">受講生の紹介のみ</td>
                   <td class="td-center w-4/12 text-lg lg:text-base md:text-sm text-center md:tracking-tighter">受講生募集→<br class="hidden md:block" />GLIへの紹介</td>
                   <td class="w-full py-8 md:py-6 flex flex-col justify-center items-center">
                     <div>
                       <p class="text-base md:text-xs md:tracking-tighter">代理店収益/1人あたり</p>
-                      <p class="text-4xl lg:text-2xl md:text-base font-bold tracking-tighter">5,000~7,000<span class="text-xl md:text-xs tracking-tighter">円</span></p>
+                      <p class="text-4xl lg:text-2xl md:text-base font-bold tracking-tighter text-red2">5,000~7,000<span class="text-xl md:text-xs tracking-tighter">円</span></p>
                     </div>
                     <p class="text-right text-base md:text-xs">（コースにより）</p>
                   </td>
@@ -490,12 +506,43 @@
 
                 <tbody class="border-bottom w-full">
                   <th class="w-1/12 md:w-auto text-5xl lg:text-3xl md:text-lg text-white font-bold bg-nevy">02</th>
-                  <td class="w-3/12 md:w-2/12 font-bold text-2xl lg:text-xl md:text-sm bg-skyBlue text-center">受講生の紹介 <br />+<br />受講生管理</td>
+                  <td class="w-3/12 md:w-2/12 font-bold text-2xl lg:text-xl md:text-sm bg-purple text-center">受講生の紹介 <br />+<br />受講生管理</td>
                   <td class="td-center w-4/12 text-lg lg:text-base md:text-sm text-center md:tracking-tighter">生徒募集、定期面、<br class="md:hidden" />イベント案内、レッスンオブザーブ</td>
                   <td class="w-full py-8 md:py-6 flex flex-col justify-center items-center">
                     <div>
                       <p class="text-base md:text-xs md:tracking-tighter">代理店収益/1人あたり</p>
-                      <p class="text-4xl lg:text-2xl md:text-base font-bold tracking-tighter">8,000~10,000<span class="text-xl md:text-xs tracking-tighter">円</span></p>
+                      <p class="text-4xl lg:text-2xl md:text-base font-bold tracking-tighter text-red2">8,000~10,000<span class="text-xl md:text-xs tracking-tighter">円</span></p>
+                    </div>
+                    <p class="text-right text-base md:text-xs">（コースにより）</p>
+                  </td>
+                </tbody>
+              </table>
+
+              <table class="hidden md:block w-fit m-auto bg-white mt-6 border-bottom">
+                <tbody>
+                  <td class="w-1/2 text-center text-3xl font-semibold font-din text-white bg-nevy py-2">01</td>
+                  <td class="w-1/2 text-center text-3xl font-semibold font-din text-white bg-nevy py-2">02</td>
+                </tbody>
+                <tbody>
+                  <td class=" bg-purple text-center font-semibold text-xl py-4">受講生の<br />紹介のみ</td>
+                  <td class="border-left bg-purple text-center font-semibold text-xl py-4">受講生の紹介 <br />+<br />受講生管理</td>
+                </tbody>
+                <tbody>
+                  <td class="text-xl text-center py-3">受講生募集<br />↓<br />GLIへの紹介</td>
+                  <td class="border-left text-xl text-center py-3 tracking-tight">生徒募集、定期面、<br />イベント案内、<br />レッスンオブザーブ</td>
+                </tbody>
+                <tbody>
+                  <td class="py-5 px-1">
+                    <div>
+                      <p class="text-xs">代理店収益/1人あたり</p>
+                      <p class="text-xl text-center font-semibold tracking-tighter text-red2">5,000~7,000<span class="text-xs tracking-tighter">円</span></p>
+                    </div>
+                    <p class="text-right text-base md:text-xs">（コースにより）</p>
+                  </td>
+                  <td class="py-5 px-1 border-left">
+                    <div>
+                      <p class="text-xs">代理店収益/1人あたり</p>
+                      <p class="text-xl text-center font-semibold tracking-tighter text-red2">8,000~10,000<span class="text-xs tracking-tighter">円</span></p>
                     </div>
                     <p class="text-right text-base md:text-xs">（コースにより）</p>
                   </td>
@@ -550,7 +597,7 @@
                 <img class="w-4/5 md:w-2/3 m-auto" src="./assets/president.png" alt="代表：鏑木 稔さんの写真">
                 <p class="mt-10 md:mt-0 md:mb-2 md:text-center text-2xl md:text-lg text-left lg:text-center font-bold">鏑木 稔</p>
               </div>
-              <p class="w-2/3 md:w-11/12 text-lg md:text-base lg:text-base leading-relaxed">
+              <p class="w-2/3 md:w-11/12 text-lg lg:text-base leading-relaxed">
                 東京という受験の激戦地域で25年に渡り学習塾を営み、2200名の生徒数へと発展。7年前にグローバル教育の必要性を実感して小学生でも本格的4技能英語力が身に付けられる英会話スクールGLIを設立。
                 英語はコミュニケーションの手段。英語を使って何を考え発信できるかが重要だとして、世界の仕組みを学ぶ事に英語を使うCLILという手法でテキストを開発。英語力のみならずグローバルスキルの獲得も目指したグローバルスクールとして開校。
                 知識→活用→実体験の学びの進展が大切だとしてフィリピン、ネパール、インドネシア、カンボジア、バングラディッシュ、コスタリカの孤児院や小中高等学校、語学学校と相互交流を図る。
@@ -563,11 +610,13 @@
         </div>
       </div>
 
-      <footer class="bg-nevy py-16 md:py-8 md:hidden">
-        <div>
-          <h1 class="text-white font-extrabold text-7xl xl:text-4xl lg:text-3xl text-center">今すぐお申し込み・お見積もり（無料）をする</h1>
-        </div>
-      </footer>
+      <a class="hover:opacity-70" href="">
+        <footer class="bg-nevy py-16 md:py-8 md:hidden">
+          <div>
+            <h1 class="text-white font-extrabold text-7xl xl:text-4xl lg:text-3xl text-center">今すぐお申し込み・お見積もり（無料）をする</h1>
+          </div>
+        </footer>
+      </a>
 
     </main>
   </div>

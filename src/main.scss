@@ -34,7 +34,6 @@ mark {
 }
 
 .bottom-fixed {
-  // background-color: $nevy;
   background: linear-gradient(180deg, #0667B8 0%, #1A2982 100%);
 }
 
@@ -132,6 +131,9 @@ mark {
 .border-top {
   border-top: 1px solid black;
 }
+.border-left {
+  border-left: 1px solid black;
+}
 
 @media screen and (max-width:1024px) {
 
@@ -165,6 +167,11 @@ mark {
     margin: auto;
   }
 
+  .h-circle::before {
+    padding: 4px;
+    background-clip:content-box;
+  }
+
   .h-title-first, .h-title-last {
     font-size: 40px;
   }
@@ -175,9 +182,6 @@ mark {
 
   .bg-outer {
     background-color: $white;
-  }
-  .bg-gold {
-    background: radial-gradient(50.28% 50.28% at 49.88% 49.72%, #FFFEE5 21.55%, #F4C66D 100%)
   }
   .border-brown {
     border: 1px double #9B6C2C;
