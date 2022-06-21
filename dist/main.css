@@ -317,6 +317,10 @@ mark {
   border-top: 1px solid black;
 }
 
+.border-left {
+  border-left: 1px solid black;
+}
+
 @media screen and (max-width: 1024px) {
   .h-title-first, .h-title-last {
     font-size: 64px;
@@ -345,6 +349,11 @@ mark {
     margin: auto;
   }
 
+  .h-circle::before {
+    padding: 4px;
+    background-clip: content-box;
+  }
+
   .h-title-first, .h-title-last {
     font-size: 40px;
   }
@@ -355,10 +364,6 @@ mark {
 
   .bg-outer {
     background-color: #ffffff;
-  }
-
-  .bg-gold {
-    background: radial-gradient(50.28% 50.28% at 49.88% 49.72%, #FFFEE5 21.55%, #F4C66D 100%);
   }
 
   .border-brown {
